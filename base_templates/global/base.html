@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    {% include "global/partials/head.html" %}    
+    
+</head>
+<body>
+    
+    {% include "global/partials/header.html" %}
+
+    {% include 'global/partials/_messages.html' %}
+
+    <div class="login">
+        {% if user.is_authenticated %}
+        <div class="login-autheng">
+            Usuário "{{ user.username }}". 
+            Click &nbsp <a class="login-link" href="{% url "contact:logout" %}"> aqui </a> &nbsp para sair.
+        </div>
+        {% endif %}
+    </div>
+    
+    {% include "global/partials/pagination.html" %}
+    
+    <main class="content">
+        {% block content %}{% endblock content %}               
+    </main>
+    
+    {% include "global/partials/pagination.html" %}
+</body>
+ 
+</html>
+

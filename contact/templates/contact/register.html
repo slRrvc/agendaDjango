@@ -1,0 +1,14 @@
+{% extends 'global/base.html' %}
+
+{% block content %}
+  <div class="form-wrapper">
+  {% if operation == 'update' %}
+    <h2>ALTERAR USUÁRIO</h2>
+  {% else %}
+    <h2>CADASTRO DE USUÁRIOS</h2>
+  {% endif %}
+  
+  {% include "contact/partials/_user_form.html" %}
+    
+  </div>
+{% endblock content %}

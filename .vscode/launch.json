@@ -1,0 +1,25 @@
+{
+    "explorer.confirmDelete": false,
+    "django.snippets.exclude": [
+        "cms",
+        "wagtail"
+    ],
+    "vscode-edge-devtools.webhintInstallNotification": true,
+    "files.associations": {
+        "*.html": "django-html"
+    },
+    "[django-html]": {
+        "editor.defaultFormatter": "ms-python.python",
+        "editor.quickSuggestions": {
+            "comments": true,
+            "other": true,
+            "strings": true
+        },
+        "editor.tabSize": 4,
+        "editor.wordWrap": "on"
+    }, 
+    "emmet.includeLanguages": {
+        "django-html": "html",
+        "jinja-html": "html"
+    }
+}
